@@ -1,6 +1,6 @@
 
 import React from "react"
-import ReactDOM  from "react";
+//import ReactDOM  from "react";
 import "./index.css"
 
 export default function Form() {
@@ -86,9 +86,9 @@ export default function Form() {
                 </form>
             </div>
             <footer id="contactFooter">
-                <img src="ZuriIntership_logo.PNG" id="zuri_logo"/>
+                <img src="ZuriIntership_logo.PNG" id="zuri_logo" alt=""/>
                 <div id="footerWords">HNG Internship 9 Frontend Task</div>
-                <img src="Ingresive_logo.PNG" id="ingresive_logo"/>
+                <img src="Ingresive_logo.PNG" id="ingresive_logo" alt=""/>
             </footer>
         </div>
     )

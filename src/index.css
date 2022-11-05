@@ -1,13 +1,155 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+#profile__img{
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  margin-top: 40px;
+}
+.profile{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#slack{display: none;}
+.btn{
+  width: 1152px;
+  height: 76px;
+  background: #EAECF0;
+  border: 1px solid #EAECF0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #101828;
+}
+.btn:hover{background: #d7d9db;}
+.links{
+  padding-top: 35px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+#twitter{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+}
+#logo{
+  padding: 30px 0px 60px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+#slack_logo, #git_logo{
+  width: 24px;
+  height: 24px;
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+#ingresive_logo{
+  height: 32px;
+  width: 132px;
+}
+#zuri_logo{
+  height: 24px;
+  width: 185px;
+}
+#footerWords{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #667085;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media all and (max-width: 1200px) {
+  .btn{
+    width: 650px;
+    height: 50px;
+    font-size: 16px;
+  }
+  footer{
+      width: 650px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .btn{
+    width: 450px;
+    height: 40px;
+    font-size: 14px;
+  }
+  footer{
+      width: 450px;
+  }
+}
+@media all and (max-width: 768px) {
+  .btn{
+    width: 300px;
+    height: 40px;
+    font-size: 14px;
+  }
+  footer{
+      width: 300px;
+  }
+  #ingresive_logo{
+      height: 28px;
+      width: 100px;
+    }
+    #zuri_logo{
+      height: 20px;
+      width: 100px;
+    }
+    #footerWords{
+      font-weight: 400;
+      font-size: 12px;
+    }
+}
+@media all and (max-width: 480px) {
+  .btn{
+    width: 200px;
+    height: 30px;
+    font-size: 12px;
+  }
+  footer{
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+  }
+  #ingresive_logo{
+      height: 24px;
+      width: 100px;
+    }
+    #zuri_logo{
+      height: 20px;
+      width: 100px;
+    }
+    #footerWords{
+      font-weight: 400;
+      font-size: 12px;
+    }
+  
+  #twitter{
+    font-weight: 400;
+    font-size: 16px;
+  }
 }

@@ -588,6 +588,10 @@ footer{
   height: 100%;
   display: flex;
   
+}@media screen and(max-width:1240px){
+  #ul_items4{font-size: 20px; font-weight: 400px;}
+  #nft_logo{width:400px;}
+
 }
 
 @media screen and (max-width:1024px) {
@@ -596,7 +600,7 @@ footer{
   #ul_items4{font-size: 16px; font-weight: 400px;}
   #main,#conatiner3_main{flex-direction: column; align-items: center;}
   #main_diagrams{padding-left: 0%;}
-  #ft_logo{width:200px;}
+  #nft_logo{width:200px;}
 }
 @media screen and (max-width:760px) {
   #bar{flex-direction: column; justify-content: center; align-items: center;} 

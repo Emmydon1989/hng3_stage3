@@ -14,10 +14,10 @@ function Home(){
         <Nav open={setOpenModal} />            
             <div id="main">
                 <div id="main_sub">
-                    <h2>Rent a <span id="text_color">Place</span> away from <span id="text_color">Home</span> in the <span id="text_color">Metaverse</span></h2>
-                    <p>we provide you access to luxury and affordable houses
+                    <div id="h">Rent a <span id="text_color">Place</span> away from <span id="text_color">Home</span> in the <span id="text_color">Metaverse</span></div>
+                    <div id="p">we provide you access to luxury and affordable houses
                      in the metaverse, get a chance to turn your 
-                     imagination to reality at your comfort zone</p>
+                     imagination to reality at your comfort zone</div>
                     <div id="">
                         <form >
                         <input type="text" placeholder ="search location" id="input"></input>

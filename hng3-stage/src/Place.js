@@ -23,6 +23,7 @@ export default function Place(){
                 <li>Off-grid</li>
                 <li>farms</li>
             </ul>
+            
             <div id="header_location">Location
             <img src="/assets/settings.PNG" alt="" id="settings"></img>
             </div>

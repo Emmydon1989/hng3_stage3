@@ -60,7 +60,7 @@
   background-color:  linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);;
   gap: 99px;
   justify-content: center;
-  align-items: center;
+  
   }
 #main_sub{
   display: flex;
@@ -68,11 +68,11 @@
   flex-direction: column;
   gap: 48px;
   width: 52%;
-  height: 400px;
+  
   
   
 }
-#main_sub>h2{
+#h{
   font-family: 'Red Rose';
   font-style: normal;
   font-weight: 400;
@@ -80,20 +80,18 @@
   line-height: 140%;
   letter-spacing: -0.02em;
   color: #434343;
-  height: 148px;
   margin: 0px;
 }
 #text_color{
   color: #A02279;
 }
-#main_sub>p{
+#p{
   font-family: 'Red Rose';
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 35px;
   color: #434343;
-  height: 102px;
   width: 99%;
   margin: 0px;
 }
@@ -135,6 +133,8 @@ form{
 }
 #main_diagrams{
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 39%;
   background-color:  linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);;
   flex-direction: row;
@@ -208,7 +208,7 @@ form{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 817px;
+  width: 56%;
   height: 50px;
   font-family: 'Red Rose';
   font-style: normal;
@@ -267,7 +267,7 @@ form{
   width: 346px;
   font-family: 'Red Rose';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 700px;
   font-size: 48px;
   line-height: 60px;
   color: #FFFFFF;
@@ -415,7 +415,7 @@ footer{
 }  
 #header4_text{
   display: flex;
-  height: 48px;
+  
   width: 82%;
   list-style: none;
   align-items: center;
@@ -425,7 +425,7 @@ footer{
 #ul_items4{
   list-style: none;
   display: flex;
-  height: 23px;
+  
   width: 78%;
   padding-left: 0%;
   gap: 4%;
@@ -595,19 +595,33 @@ footer{
 }
 
 @media screen and (max-width:1024px) {
-  #images_desert2{grid-template-columns: 1fr 1fr 1fr;} 
-  #images_desert{grid-template-columns: 1fr 1fr;} 
+  #images_desert2,#images_desert{grid-template-columns: 1fr 1fr 1fr;} 
+  #bar_list{gap:35px} #desert_img{width: 220px; height: 245px;} #desert-img_details{width: 220px;font-size: 10px;}
   #ul_items4{font-size: 16px; font-weight: 400px;}
-  #main,#conatiner3_main{flex-direction: column; align-items: center;}
-  #main_diagrams{padding-left: 0%;}
-  #nft_logo{width:200px;}
+  #main,#conatiner3_main{flex-direction: column; align-items: center; justify-content: center; width: 100%;}
+  #main_diagrams{width: 100%; display: flex; align-items: center;justify-content: center;}
+  #header2_text{font-size: 24px;}
+  
 }
-@media screen and (max-width:760px) {
-  #bar{flex-direction: column; justify-content: center; align-items: center;} 
+@media screen and (max-width:768px) {
+  #bar{flex-direction: column; justify-content: center; align-items: center;}
+  #bar_list{gap:35px} #desert_img{width: 200px; height: 202px;} #desert-img_details{width: 200px;font-size: 10px;}
+  
   #images_desert2,#images_desert{grid-template-columns: 1fr 1fr;} 
   #header4_text{flex-direction: column;align-items: center;gap: 10px;}
   footer,#conatiner3_main,#metamask_bar{flex-direction: column; align-items:center; width: 100%;}
-  #foot2{margin-right: 0%;}
-  #ul_items4{font-size: 10px;}
+  #foot2{margin-right: 0%;} #header2_text{font-size: 16px;}
+  #ul_items4{width:100%; font-size: 14px;}
+  
+}
+@media screen and (max-width: 480px){
+  #images_desert2,#images_desert{grid-template-columns: 1fr;}
+  #ul_items4{display: grid; grid-template-columns: 1fr 1fr; place-items: center; gap: 10px;
+  font-size: 16px;} #bar_list{gap:20px}
+  #header4_text{display: grid; place-items: center; gap:10px}
+  #main_diagrams{flex-direction: column; height: 750px;} #header2_text{font-size: 10px;}
+  #container3_main1>h3{width: 100%;} #nft_logo{width: 300px; height: 350px;}
+  #main1_note{width: 100%;}
+  
   
 }

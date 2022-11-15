@@ -4,7 +4,6 @@ import React from "react";
 import Home from './Home';
 import Place from './Place';
 
-
 function App(){
   return(
     <Router>
